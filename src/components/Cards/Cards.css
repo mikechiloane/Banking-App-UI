@@ -1,0 +1,67 @@
+/* grid c1 */
+.grid-c1 {
+  display: flex;
+  flex-direction: column;
+}
+/* Define the CSS class */
+.gold-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image:  radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+.grid-c1-content {
+  border: #0083BB 1px solid;
+  background: linear-gradient(to right, #434343 0%, black 100%); 
+  border-radius: 10px;
+  padding: 16px;
+}
+.grid-c1-content .lg-value {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+.grid-c1-content .expiry-text {
+  margin-bottom: 6px;
+}
+.grid-c1-content .card-wrapper {
+  display: flex;
+}
+.grid-c1-content .card-pin-hidden {
+  font-size: 32px;
+  margin-right: 8px;
+}
+.grid-c1-content span {
+  color: #8a8587;
+}
+.grid-c1 .card-logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-c1 .card-logo {
+  display: flex;
+}
+.grid-c1 .logo-shape1,
+.grid-c1 .logo-shape2 {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+}
+.grid-c1 .logo-shape1 {
+  background-color: var(--clr-scarlet-v1);
+  margin-right: -15px;
+  z-index: 0;
+}
+.grid-c1 .logo-shape2 {
+  background-color: var(--clr-yellow);
+}
+
+@media screen and (max-width: 768px) {
+  .grid-c1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
